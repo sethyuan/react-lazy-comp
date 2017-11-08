@@ -1,0 +1,49 @@
+{
+  "name": "react-lazy-comp",
+  "version": "1.0.0",
+  "description": "Lazy load modules and React components",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --write \"**/*.@(js|jsx|less|css)\" && eslint_d --fix src",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint_d --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethyuan/react-lazy-comp.git"
+  },
+  "keywords": [
+    "react",
+    "lazy",
+    "component",
+    "module"
+  ],
+  "author": "Seth Yuan <cavingdeep@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sethyuan/react-lazy-comp/issues"
+  },
+  "homepage": "https://github.com/sethyuan/react-lazy-comp#readme",
+  "peerDependencies": {
+    "react": ">=15.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint_d": "^5.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.8.1"
+  },
+  "dependencies": {
+    "lru_map": "^0.3.3"
+  }
+}
