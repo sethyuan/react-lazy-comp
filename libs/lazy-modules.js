@@ -1,4 +1,4 @@
-import LRUMap from "lru_map"
+import { LRUMap } from "lru_map"
 
 // NOTE: configure cache size (num of items)
 const loadedModules = new LRUMap(15)

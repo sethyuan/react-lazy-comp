@@ -1,3 +1,9 @@
-export Lazy from "./components/lazy"
-export lazyLoad from "./libs/lazy-modules"
-export lazyComp from "./libs/lazy-comp"
+import Lazy from "./components/lazy"
+import lazyLoad from "./libs/lazy-modules"
+import lazyComp from "./libs/lazy-comp"
+
+export {
+  Lazy,
+  lazyLoad,
+  lazyComp,
+}
