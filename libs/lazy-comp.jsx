@@ -7,8 +7,8 @@ export default function lazyComp(name, importFn, errorComp) {
 
     render() {
       return (
-        <Lazy modules={{ Comp: importFn }} errorComp={errorComp}>
-          {({ Comp }) => <Comp {...this.props} />}
+        <Lazy modules={{ [name]: importFn }} errorComp={errorComp}>
+          {({ [name]: Comp }) => <Comp {...this.props} />}
         </Lazy>
       )
     }
